@@ -2,7 +2,7 @@
 
 A scikit-learn multi-class classifier that predicts a person's maximum race
 distance — **5K**, **10K**, **Half Marathon**, or **Marathon** — from five
-synthetic health and fitness features.
+health and fitness features.
 
 The target is an **ordinal** outcome (5K < 10K < Half Marathon < Marathon),
 which is reflected in the confusion matrix: nearly every misclassification
@@ -16,7 +16,7 @@ The model is trained on five numeric features per person:
 | --------------- | -------------------------------------------- |
 | `vo2_max`       | Aerobic capacity (mL/kg/min)                 |
 | `weekly_miles`  | Average running mileage per week             |
-| `resting_hr`    | Resting heart rate (bpm)                     |
+| `mile_time_min` | Best mile time (minutes)                     |
 | `years_running` | Years of consistent running experience       |
 | `body_fat_pct`  | Body fat percentage                          |
 
@@ -27,13 +27,13 @@ to a human-readable label at inference time via the `class_order` list.
 
 | Model               | Test accuracy |
 | ------------------- | ------------- |
-| Logistic Regression | 0.852         |
-| Random Forest       | 0.814         |
-| Gradient Boosting   | 0.764         |
+| Logistic Regression | 0.785         |
+| Random Forest       | 0.7475        |
+| Gradient Boosting   | 0.7175        |
 
 Feature importances from the Gradient Boosting model rank `vo2_max` and
 `weekly_miles` as the dominant predictors, followed by `body_fat_pct`,
-`years_running`, and `resting_hr`.
+`years_running`, and `mile_tim_min`.
 
 ## Quickstart
 
