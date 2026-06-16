@@ -29,7 +29,7 @@ to a human-readable label at inference time via the `class_order` list.
 | ------------------- | ------------- |
 | Logistic Regression | 0.785         |
 | Random Forest       | 0.7475        |
-| Gradient Boosting   | 0.7175        |
+| Gradient Boosting   | 0.7525        |
 
 Feature importances from the Gradient Boosting model rank `vo2_max` and
 `weekly_miles` as the dominant predictors, followed by `body_fat_pct`,
